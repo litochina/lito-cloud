@@ -1,6 +1,6 @@
 spring:
   application:
-    name: cloud-server
+    name: cloud
     base-package-path: com.litochina
   aop:
     auto: true
@@ -39,7 +39,7 @@ pagehelper:
 
 server:
   port: 8060
-  context-path: /cloud-server
+  context-path: /cloud
   session:
     timeout: 43200
   connection-timeout: 18000000

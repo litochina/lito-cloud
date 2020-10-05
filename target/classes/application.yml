@@ -1,0 +1,51 @@
+spring:
+  application:
+    name: cloud-server
+    base-package-path: com.litochina
+  aop:
+    auto: true
+  profiles:
+    active: 'dev'
+  http:
+    encoding:
+      charset: UTF-8
+      force: true
+    multipart:
+      maxFileSize: 2048MB
+      maxRequestSize: 2048MB
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non-null
+    serialization:
+      write-dates-as-timestamps: false
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+  thymeleaf:
+    mode: HTML5
+    cache: false
+    prefix: classpath:/templates/
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+#pagehelper分页插件
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: false
+  params: count=countSql
+
+server:
+  port: 8060
+  context-path: /cloud-server
+  session:
+    timeout: 43200
+  connection-timeout: 18000000
+  max-http-header-size: 4048576
+  tomcat:
+    max-http-post-size: 4048576  #请求参数长度
+
+gw:
+  port: 8889

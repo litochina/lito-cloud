@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    master:
+      url: jdbc:mysql://192.168.0.49:3306/qxzniot?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      username: qxzn_admin
+      password: ENC(ih25XM1mQy0MuQBpr8mSe0vAK/LYv412)
+    tim:
+      url: jdbc:mysql://192.168.0.49:3306/qx3d?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true
+      username: qxzn_admin
+      password: ENC(ih25XM1mQy0MuQBpr8mSe0vAK/LYv412)
+  mail:
+    host: smtp.qq.com #发送邮件服务器
+    username: qxaiot@qq.com #发送邮件的邮箱地址
+    password: qvvlfqnkaocqddeb #客户端授权码，不是邮箱密码，这个在qq邮箱设置里面自动生成的
+    default-encoding: utf-8
+    protocol: smtp
+
+# xxl-job
+xxl:
+  job:
+    admin:
+      addresses: http://127.0.0.1:8280/xxl-job-admin
+    executor:
+      appname: qxzn-iot-job
+      ip:
+      port: 9995
+      logpath: /logs/iot-job
+      logretentiondays: 10
+    accessToken:

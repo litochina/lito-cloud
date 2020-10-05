@@ -12,7 +12,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
 @SpringBootApplication(scanBasePackages = "com.litochina")
-//@MapperScan("com.qxaiot.**.mapper")
 @EnableScheduling
 public class CloudServerApplication {
 

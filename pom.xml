@@ -10,10 +10,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.litochina</groupId>
-    <artifactId>lito-cloud-server</artifactId>
+    <artifactId>lito-cloud</artifactId>
     <version>1.0.0</version>
 
-    <name>lito-cloud-server</name>
     <description>Cloud Server project for Spring Boot</description>
 
     <properties>
@@ -73,7 +72,7 @@
     </dependencies>
 
     <build>
-        <finalName>cloud-server</finalName>
+        <finalName>cloud</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

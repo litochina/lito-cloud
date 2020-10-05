@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/lito-cloud-server.iml" filepath="$PROJECT_DIR$/.idea/lito-cloud-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/lito-cloud.iml" filepath="$PROJECT_DIR$/.idea/lito-cloud.iml" />
     </modules>
   </component>
 </project>

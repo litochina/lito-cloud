@@ -1,1 +1,1 @@
-# lito-cloud-server
+# lito-cloud
